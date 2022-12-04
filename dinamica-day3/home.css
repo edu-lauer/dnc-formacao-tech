@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
+
+:root {
+    --black: black;
+    --white: white;
+    --orange: #CA7900;
+}
+
+
+body {
+    all: unset;
+    font-family: 'Raleway';
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+}
+
+a {
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #968383;
+}
+
+nav, ul {
+    display: flex;
+    background-color: var(--orange);
+}
+
+ul {
+    width: 50%;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+    margin: 40px 0 40px 0;
+}
+    
+.meuCarrinho {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 80px;
+}
+
+    .meuCarrinho img {
+        margin-left: 10px;
+    }
+
+.copo {
+    margin-bottom: -190px;
+}
+.retangulo {
+    display: flex;
+    flex-direction: column;
+
+    width: 900px;
+    height: 180px;
+    background-color: var(--orange);
+    align-items: center;
+    margin: 150px auto auto auto;
+
+    padding-bottom: 20px;
+
+    justify-content: space-around;
+    
+    border-radius: 15px;
+}
+
+    .retangulo span {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+
+.doisBotoes {
+    display: flex;
+    width: 340px;
+    justify-content: space-between;
+}
+
+    .doisBotoes button {
+        border-radius: 14px;
+        height: 60px;
+        width: 150px;
+
+        font-size: 20px;
+        font-family: 'Raleway';
+        font-weight: 600;
+        color: var(--white);
+        background-color: var(--orange);
+
+        border: 4px solid;
+        cursor: pointer;
+    }
+
+
+.container-botao {
+    width: 100%;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.botaoEntrar {
+    width: 200px;
+    height: 50px;
+    border: 5px solid #F5F5F5;
+    border-radius: 14px;
+    background-color: var(--orange);
+    color: var(--white);
+
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 20px;
+    
+}
