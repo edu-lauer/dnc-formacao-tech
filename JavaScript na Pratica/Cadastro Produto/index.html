@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Gerenciamento de Produtos</title>
+</head>
+<body>
+    <header>
+        <img src="./img/logo-dnc.png">
+        <h1>Controle de Produtos</h1>
+    </header>
+
+    <section>
+        <h2>Produtos</h2>
+        <span>Lista de Produtos</span>
+        <div class="card">
+            <div class="inputInfo">
+                <label>Nome do Produto</label>
+                <input type="text" id="nomeProduto" placeholder="Iphone">
+            </div>
+            <div class="inputInfo">
+                <label>Valor</label>
+                <input type="text" id="valorProduto" placeholder="R$ 00,00">
+            </div>
+            <button onclick="produto.adicionar()" id="botaoAdicionar">Adicionar</button>
+            <button onclick="produto.cancelar()" id="botaoLimpar">Cancelar</button>
+        </div>
+        <div class="conteudo">
+            <table border="1">
+                <thead>
+                    <th>ID</th>
+                    <th>Produto</th>
+                    <th>PQreço</th>
+                    <th>Remover</th>
+                </thead>
+                <tbody id="tbody">                    
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="./index.js"></script>
+</body>
+</html>
