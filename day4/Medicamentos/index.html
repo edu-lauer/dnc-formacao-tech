@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Farmácia</title>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Cadastro de Medicamentos</li>
+                    <li>Cadastro de Vacinas</li>
+                    <li>Cadastro de Cosméticos</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-secundario" >
+            <img src="./assets/remedio.svg" alt="um pote e uma cartela de remédio">
+            <div class="div-textos">
+                <h1>Cadastro de Medicamentos</h1>
+                <h2>Farmácia da Gente</h2>
+            </div>
+        </div>       
+    </header>
+
+    <section>
+        <div class="formulario" id="form">
+            <form onsubmit="addMed()">
+                <label for="nomeMedicamento">Nome do Medicamento *</label>
+                <input autocomplete="off" type="text" required name="nomeMedicamento" id="medName">
+
+                <label for="qntDisponivel">Quantidade Disponivel *</label>
+                <input autocomplete="off" type="text" required name="qntDisponivel" id="qntDisp">
+
+                <label for="medClasse">Classe do Medicamento *</label>
+                <input autocomplete="off" type="text" required name="medClasse" id="medClasse">
+
+                <button class="submit-button" type="submit">Cadastrar</button>
+            </form>
+        </div>
+        <div>
+            <table id="dataTable">
+                <tr>
+                    <th>ID</th>
+                    <th>Medicamento</th>
+                    <th>Quantidade</th>
+                    <th>Classe</th>
+                    <th>Remover</th>
+                </tr>
+            </table>            
+        </div>
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+</html>
