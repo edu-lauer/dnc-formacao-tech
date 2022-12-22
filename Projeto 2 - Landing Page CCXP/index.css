@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: yellow;
+    height: 118px;
+    width: 100%;
+}
+
+    header img {
+        margin: 30px;
+    }
+
+section {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 40% 60%;
+}
+
+
+.textos {
+    background-color: #514988;
+}
+
+    .textos h1 {    
+        color: #F3C61F;
+        font-size: 70px;
+        font-weight: 700;
+        letter-spacing: 0em;
+        text-align: center;
+
+        margin: 25px 10px auto 10px;
+    }
+
+    .textos h2 {
+        color: white;
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 0em;
+        text-align: center;
+        
+        margin-top: 30px;
+    }
+
+    .textos p {
+        color: white;
+        font-size: 25px;
+        font-weight: 400;
+        letter-spacing: 0em;
+        text-align: center;
+        
+        height: 50%;
+
+        display: flex;
+        align-items: center;
+
+        margin: 50px 50px 30px 50px;
+    }
+
+
+.countdown {
+    display: grid;
+    grid-auto-flow: row;
+    width: 100%;
+}
+
+    .countdown h3 {
+        color: #E33881;
+        width: 741px;
+        height: 36px;
+        font-weight: 700;
+        font-size: 30px;
+        margin: auto;
+    }
+    
+    .countdown video {
+        width: 100%;
+    }
+    
+.timer {
+    display: grid;
+    grid-auto-flow: column;
+    margin-top: 40px;
+}
+
+#dias, #horas, #minutos, #segundos {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 70px;
+}
+
+.informacoes h3 {
+    font-weight: 700;
+    font-size: 27px;
+    color: #F3C61F;
+    margin-top: 20px;
+    margin-left: 2rem;
+}
+
+.imagens {
+    margin-top: 20px;
+}
+
+.imagensButton {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 60% 40%;
+}
+
+button {
+    font-weight: 700;
+    font-size: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: none;
+
+    color: #FFFFFF;
+
+    width: 596px;
+    height: 148px;
+
+    background: #514988;
+    border-radius: 20px;
+
+    margin: auto;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: yellow;
+}
+
+
+@media only screen and (max-width: 1700px) {
+
+    .textos h1 {
+        font-size: 50px;
+    }
+
+    .textos h2 {
+        font-size: 25px;
+    }
+
+    .textos p {
+        font-size: 20px;
+    }
+
+    #dias, #horas, #minutos, #segundos {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    button {
+        font-size: 30px;
+        width: 450px;
+        height: 110px;
+        border-radius: 10px;
+    }
+
+    .imagens img {
+        width: 20%;
+
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 1250px) {
+
+    .textos h1 {
+        font-size: 40px;
+    }
+
+    .textos h2 {
+        font-size: 25px;
+    }
+
+    .textos p {
+        font-size: 15px;
+    }
+
+    #dias, #horas, #minutos, #segundos {
+        font-size: 40px;
+    }
+
+    .informacoes h3 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 25px;
+        width: 400px;
+        height: 90px;
+        border-radius: 8px;
+    }
+
+    .imagens img {
+        width: 20%;
+    }
+
+    .countdown h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+}
