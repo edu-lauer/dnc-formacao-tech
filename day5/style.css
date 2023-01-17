@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Anaheim&family=Inter:wght@100;400&family=Raleway&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Raleway:wght@400;500;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Style */
+
+header {
+    background-color: #303030;
+    width: 100%;
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 56px;
+
+    margin-left: 5rem;
+}
+
+#logoDnc {
+    margin-left: 1rem;
+}
+
+/* Body Style */
+
+section {
+    display: grid;
+    grid-auto-flow: column;
+
+    text-align: center;
+}
+
+.fixed-container {
+    margin-top: 3rem;
+}
+
+.fixed-container h2 {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    color: #265e70;
+
+    margin-bottom: 2rem;
+}
+
+.carousel {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel h2 {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    color: #265e70;
+
+    margin-bottom: 2rem;
+}
+
+.carousel h2 span {
+    color: #4dbce9;
+}
+
+.itensCarousel {
+    display: flex;
+}
+
+.carouselList {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    overflow: hidden;
+    max-width: 320px;
+
+    list-style: none;
+
+    align-items: center;
+
+    background-color: #4dbce9;
+    padding: 1rem;
+    border-radius: 30px;
+}
+
+.itens-carousel-previous {
+    background: none;
+    border: none;
+    margin-right: 2rem;
+}
+
+.itens-carousel-next {
+    background: none;
+    border: none;
+    margin-left: 2rem;
+}
+
+.carouselList {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.carouselList h3 {
+    font-size: 20px;
+}
+
+.carouselList p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.carouselList span, p:first-of-type {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+span {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    color: #265e70;
+
+    padding: 0 10px 0 10px;
+
+    margin-bottom: 1rem;
+}
+
+.saibaMais {
+    margin-top: 5rem;
+    background-color: #4dbce9;
+    border: solid 1px #4dbce9;
+    border-radius: 10px;
+
+    width: 30%;
+    height: 3rem;
+
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.saibaMais:hover {
+    cursor: pointer;
+    background-color: #185b88;
+    transition: 0.5s;
+}
+
+/* modal */
+
+#dv-modal {
+    display: none;
+}
+
+.modalWindow {
+    width: 690px;
+    height: 615px;
+    background-color: rgba(77, 188, 233);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    top: 180px;
+    left: 625px;
+}
+
+.modalHeader {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 30px;
+}
+
+.queroAssinar {
+    background: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: #265E70;
+    padding: 10px 25px 10px 25px;
+    font-size: 20px;
+
+    margin-top: 100px;
+}
+
+.modalBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalBody p {
+    width: 640px;
+    margin-top: 45px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.modalBody h3 {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.fechar {
+    margin: 10px;
+}
+
+.fechar:hover {
+    cursor: pointer;
+}
+
+.queroAssinar:hover {
+    background-color: #185b88;
+    transition: .5s;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* classe para ser adicionada a section principal */
+
+.opacidade {
+    opacity: 0.4;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ByeCar</title>
+</head>
+<body>
+    <header>
+        <img src="./assets/logo-dnc.svg" alt="logo da dnc" id="logoDnc">
+        <h1>ByeCar</h1>
+    </header>
+
+    <section id="main-container">
+        <div class="fixed-container">
+            <h2>Ter <b>uma moto</b> por assinatura <br>nunca foi tão fácil!</h2>
+            <img src="./assets/intersect.svg" alt="visão de frente de uma moto com uma mulher em cima, colocando seu capacete">
+        </div>
+        <div class="carousel">
+            <h2>Conheça nossas<span>motos!</span></h2>
+            <div class="itensCarousel">
+                <button class="itens-carousel-previous" onclick="show(-1)">
+                    <img src="./assets/arrow-left.png" alt="seta para esquerda" />
+                </button>
+                <ul class="carouselList">
+                    <li>
+                        <h3>Scooter Elétrica Voltz EV1</h3>
+                        <img src="./assets/scooter-eletrica.svg" alt="Scooter elétrica branca" id="scooter">
+                        <p>A partir de</p>
+                        <span>R$ 619,90</span>
+                        <p>Planos de 30 meses</p>
+                    </li>
+                    <li>
+                        <h3>Honda CB 500X</h3>
+                        <img src="./assets/honda-cb500x.svg" alt="Honta CB 500X preta e prata" id="honda">
+                        <p>A partir de</p>
+                        <span>R$ 619,90</span>
+                        <p>Planos de 30 meses</p>
+                    </li>
+                </ul>
+                <button class="itens-carousel-next" onclick="show(+1)">
+                    <img src="./assets/arrow-right.png" alt="seta para direta" />
+                </button>
+            </div>
+            <button class="saibaMais" onclick="openModal('dv-modal')">Saiba mais</button>           
+        </div>
+    </section>
+
+    <div id="dv-modal" class="modalWindow">
+        <div class="modalHeader">
+            <img onclick="closeModal('dv-modal')" class="fechar" src="./assets/close.png" alt="x para fechar a janela">
+        </div>
+
+        <div class="modalBody">
+            <h3>Honda CB 500X</h3>
+            <p>O câmbio de 6 marchas da CB 500X oferece maior confiança e performance na pilotagem, tornando as subidas de marcha mais leves e as reduções mais suaves!</p>
+            <img src="./assets/honda-cb500x.svg" alt="moto honda cb 500x">
+            <button class="queroAssinar">Quero Assinar!</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
