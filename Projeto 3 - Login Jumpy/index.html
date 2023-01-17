@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Jumpy</title>
+</head>
+<body>
+    <header>
+        <img src="./assets/logo-dnc.svg" alt="logo da dnc">
+    </header>
+    <section>
+        <div class="titulo">
+            <img src="./assets/jumpy.svg" alt="logo jumpy">
+            <h1>Bem vindo ao Jumpy!</h1>
+        </div>     
+            <form action="">
+                <div class="form-field">
+                    <label for="nomeCompleto">Nome Completo:</label>
+                    <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder="Nome completo" required>
+                    <span class="spanNomeCompleto, hidden">Campo Obrigatório</span>
+                </div>
+                <div class="form-field"> 
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email" placeholder="email@email.com" required>
+                    <span class="spanEmail, hidden">Campo Obrigatório</span>
+                </div>
+                <div class="form-field">
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" name="telefone" id="telefone" placeholder="(00) 00000-0000" required>
+                    <span class="spanTelefone, hidden">Campo Obrigatório</span>
+                </div>
+                <div class="form-field">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" name="cpf" id="cpf" placeholder="000.000.000.00" required>
+                    <span class="spanCpf, hidden">Campo Obrigatório</span>
+                </div>
+                <div class="form-field">
+                    <label for="password">Senha:</label>
+                    <input type="password" name="passoword" id="senha" placeholder="***********" required>
+                    <span class="spanSenha, hidden">Campo Obrigatório</span>
+                </div>
+    
+                <button class="btn-submit" type="button" onclick="checkForm()">Cadastrar</button>
+                <span class="spanGeral">Campos obirgatórios não registrados.</span>
+            </form>
+    </section>
+    
+    <script src="./main.js" ></script>
+</body>
+</html>
