@@ -1,0 +1,130 @@
+main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-form-container {
+    font-family: 'Baloo Bhaina 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 50px;
+
+    text-align: center;
+
+    color: rgba(159, 127, 219, 0.8);
+    width: 50%;
+    margin: 0 auto 50px auto;
+    text-align: left;
+}
+
+.form-form-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto 0 auto;
+}
+
+span {
+    margin-left: 15px;
+}
+
+.input-form-container {
+    margin: 10px;
+    height: 50px;
+
+
+    background: #9F7FDB;
+    border-radius: 10px;
+
+    color: #FFFFFF;
+    border: none;
+    padding-left: 30px;
+}
+
+.btns-form-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+.btn-qipl-form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 28px;
+    gap: 10px;
+
+    background: #7834F3;
+    border-radius: 8px;
+
+
+    font-family: 'Baloo Bhaina 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 48px;
+    letter-spacing: 0.05em;
+
+    color: #E9E1FD;
+}
+
+.btn-info-form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 28px;
+    gap: 10px;
+
+    background: #9F7FDB;
+    border-radius: 8px;
+
+    font-family: 'Baloo Bhaina 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 48px;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn-info-form-container:hover{
+    cursor: pointer;
+    background: #7834F3;
+    transition: 1500ms;
+}
+
+.btn-qipl-form-container:hover{
+    cursor: pointer;
+    background: #9F7FDB;
+    transition: 1500ms;
+}
+
+.msg-error {
+    color: red;
+}
+
+.msg-success {
+    color: green;
+}
+
+#final-span {
+    text-align: center;
+}
