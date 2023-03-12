@@ -1,0 +1,12 @@
+@use "../../sass/variables" as *;
+
+
+.home {
+    &__cards {
+        padding: 0 166px 166px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6rem;
+        justify-content: center;
+    }
+}
